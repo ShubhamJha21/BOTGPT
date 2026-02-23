@@ -10,7 +10,7 @@ This project demonstrates:
 - LLM integration
 - Basic Retrieval-Augmented Generation (RAG)
 - Cost-aware context management
-- Docker + CI readiness
+- Docker
 
 ---
 
@@ -295,64 +295,10 @@ pytest
 
 Handled scenarios:
 
-- LLM timeout → graceful failure
 - Invalid conversation ID → 404 response
-- Database transaction rollback
 - Context truncation before token overflow
 
 ---
-
-# 📈 Scalability Strategy
-
-For scaling to high traffic (1M+ users):
-
-### LLM Layer
-- Async execution
-- Background task queues (Celery + Redis)
-
-### Database
-- Migrate to PostgreSQL
-- Add read replicas
-- Connection pooling
-
-### Vector Search
-- Replace FAISS with Pinecone / Weaviate / Milvus
-
-### Infrastructure
-- Containerized services
-- Horizontal scaling
-- Load balancer
-- Stateless API instances
-
----
-
-# 🔒 Production Improvements (Future Enhancements)
-
-- JWT authentication
-- Redis caching
-- Streaming responses
-- Rate limiting
-- Structured logging
-- Monitoring (Prometheus + Grafana)
-- Cloud deployment (AWS / GCP)
-
----
-
-# 🎯 Evaluation Alignment
-
-This implementation demonstrates:
-
-- Clean modular backend design
-- RESTful API maturity
-- Data modeling clarity
-- Real LLM API integration
-- Basic RAG pipeline
-- Context & cost awareness
-- Docker & CI familiarity
-- Production thinking mindset
-
----
-
 # 👨‍💻 Author
 
 **Shubham Jha**  
