@@ -70,7 +70,6 @@ Ollama (Llama3 - Local LLM)
 | Vector Search | FAISS |
 | Testing | Pytest |
 | Containerization | Docker |
-| CI | GitHub Actions |
 
 ---
 
